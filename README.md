@@ -2,17 +2,7 @@
 
 A sleek, modern time tracking app built with Next.js for developers who demand both functionality and aesthetics.
 
-## The ## 🙏 Acknowledgments
 
-- Built with passion for developers who care about their tools
-- Inspired by the need for beautiful, functional time tracking
-- Thanks to the Next.js team for an amazing framework
-
----
-
-**Made with ⚡ by a developer, for developers who refuse to compromise on design.**
-
-*Start tracking your time beautifully with Chronica.* Chronica
 
 As I was finally starting out with getting serious with my backend development journey, I realized I needed a reliable time tracking app to actually get my head down and get work done. It was disappointing that none of the existing web apps worked well on Windows, and even if they did, the UI was not appealing enough to keep me motivated.
 
