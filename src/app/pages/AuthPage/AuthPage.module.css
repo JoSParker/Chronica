@@ -1,0 +1,324 @@
+/* AuthPage.module.css - Matching Current Theme */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Container */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #000000 0%, #0d0d0f 50%, #0a0a0a 100%);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  perspective: 1000px;
+}
+
+/* Flip Container */
+.flipContainer {
+  width: 100%;
+  max-width: 480px;
+  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+  transform-origin: center center;
+  position: relative;
+}
+
+.flipContainer.flipping {
+  transform: rotateY(180deg);
+}
+
+/* Auth Card */
+.authCard {
+  background: #0a0a0a;
+  border: 2px solid #222;
+  border-left: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 3rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  transform: rotateY(0deg);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.subtitle {
+  font-size: 0.75rem;
+  color: #666666;
+  margin: 0;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Form */
+.form {
+  margin-bottom: 2rem;
+}
+
+.inputGroup {
+  margin-bottom: 1.5rem;
+}
+
+.label {
+  display: block;
+  font-size: 0.625rem;
+  font-weight: 500;
+  color: #666666;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.input {
+  width: 100%;
+  background: #111111;
+  border: 1px solid #333333;
+  border-radius: 6px;
+  padding: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.2s ease;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input:focus {
+  border-color: #666666;
+  box-shadow: 0 0 0 3px rgba(102, 102, 102, 0.1);
+}
+
+.input::placeholder {
+  color: #444444;
+  font-style: italic;
+}
+
+/* Submit Button */
+.submitButton {
+  width: 100%;
+  background: transparent;
+  border: 2px solid #333333;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  position: relative;
+  overflow: hidden;
+}
+
+.submitButton:hover {
+  border-color: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.submitButton:active {
+  transform: translateY(0);
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0 1.5rem 0;
+  position: relative;
+}
+
+.divider::before {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #333333;
+}
+
+.divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #333333;
+}
+
+.dividerText {
+  padding: 0 1rem;
+  font-size: 0.625rem;
+  color: #666666;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  background: #0a0a0a;
+}
+
+/* Google Button */
+.googleButton {
+  width: 100%;
+  background: #111111;
+  border: 2px solid #333333;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.googleButton:hover {
+  border-color: #666666;
+  background: #1a1a1a;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.1);
+}
+
+.googleButton:active {
+  transform: translateY(0);
+}
+
+.googleIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+/* Toggle Section */
+.toggleSection {
+  text-align: center;
+  padding: 1.5rem 0;
+  border-top: 1px solid #222222;
+}
+
+.toggleText {
+  font-size: 0.75rem;
+  color: #666666;
+  margin: 0 0 1rem 0;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.toggleButton {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: 'JetBrains Mono', monospace;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+  padding: 0.5rem 0;
+}
+
+.toggleButton:hover {
+  border-bottom-color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.footerText {
+  font-size: 0.625rem;
+  color: #444444;
+  margin: 0;
+  font-family: 'JetBrains Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  
+  .authCard {
+    padding: 2rem;
+    max-width: 100%;
+  }
+  
+  .title {
+    font-size: 1.25rem;
+  }
+  
+  .input {
+    padding: 0.875rem;
+  }
+  
+  .submitButton {
+    padding: 0.875rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .authCard {
+    padding: 1.5rem;
+  }
+  
+  .header {
+    margin-bottom: 2rem;
+  }
+  
+  .inputGroup {
+    margin-bottom: 1.25rem;
+  }
+}
+
+/* Focus styles for keyboard navigation */
+.input:focus,
+.submitButton:focus,
+.toggleButton:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Loading state (for future use) */
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submitButton:disabled:hover {
+  border-color: #333333;
+  transform: none;
+  box-shadow: none;
+}
