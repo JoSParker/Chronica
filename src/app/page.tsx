@@ -84,7 +84,7 @@ export default function HomePage() {
           justifyContent: 'center',
           marginTop: '40px'
         }}>
-          <Link href="/pages/MainClockPage" style={{
+          <Link href="/pages/AuthPage" style={{
             padding: '16px 32px',
             background: '#ffffff',
             color: '#0a0a0a',
@@ -100,6 +100,23 @@ export default function HomePage() {
             transition: 'all 0.3s ease'
           }}>
             Get Started
+          </Link>
+           <Link href="/pages/MainClockPage" style={{
+            padding: '16px 32px',
+            background: '#ffffff',
+            color: '#0a0a0a',
+            border: '2px solid #ffffff',
+            fontFamily: 'monospace',
+            fontSize: '14px',
+            fontWeight: '600',
+            textTransform: 'uppercase',
+            letterSpacing: '1px',
+            cursor: 'pointer',
+            textDecoration: 'none',
+            display: 'inline-block',
+            transition: 'all 0.3s ease'
+          }}>
+            No Account? Try Now!
           </Link>
         </div>
       </div>
