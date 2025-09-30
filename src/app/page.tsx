@@ -3,6 +3,7 @@
 import Link from 'next/link';
 
 export default function HomePage() {
+  console.log("vacay edits")
   const generateSquares = (count: number) => {
     return Array.from({ length: count }, (_, index) => (
       <span key={index} style={{
